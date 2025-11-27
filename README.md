@@ -39,7 +39,7 @@ Deep learning system for predicting skeletal bone age from hand X‑ray images u
 ## 🎯 Overview
 
 This project implements a **regression model** that predicts a child's bone age (in months and years) from a single hand X‑ray image.  
-It refactors a Kaggle notebook into a **fully modular Python package** with:
+It provides a **fully modular Python package** with:
 
 - A **training pipeline** (data loading, augmentation, training, evaluation)
 - A **Streamlit web app** for interactive predictions
@@ -98,7 +98,7 @@ pip install -r requirements-dev.txt
 
 ## 🚀 Quick Start
 
-### 1️⃣ Download Dataset (RSNA Bone Age – Kaggle)
+### 1️⃣ Download Dataset (RSNA Bone Age)
 
 From the repo root:
 
@@ -190,7 +190,7 @@ pediatric-radiology-ai/
 ├── app.py                   # Streamlit app
 ├── config/
 │   └── config.yaml          # Training/config options
-├── data/                    # RSNA dataset (via Kaggle)
+├── data/                    # RSNA dataset
 ├── docs/                    # Research, architecture, benchmarks, guides
 ├── experiments/             # Experiment logs
 ├── models/                  # Exported weights (bone_age_model.h5, stats)
@@ -216,7 +216,7 @@ pediatric-radiology-ai/
 ## 🧬 Dataset
 
 - **Name**: RSNA Bone Age  
-- **Source**: Kaggle (RSNA Bone Age Challenge)  
+- **Source**: RSNA Bone Age Challenge Dataset  
 - **Task**: Regression (bone age in months)  
 
 Expected columns in CSV:
