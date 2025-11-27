@@ -1,4 +1,4 @@
-# 🦴 Bone Age Prediction System
+# Pediatric Radiology AI
 
 Deep learning system for predicting skeletal bone age from hand X‑ray images using an Xception-based convolutional neural network.
 
@@ -84,7 +84,7 @@ It refactors a Kaggle notebook into a **fully modular Python package** with:
 ## 📦 Installation
 
 ```bash
-# Inside the bone-age project
+# Pediatric Radiology AI
 pip install -r requirements.txt
 ```
 
@@ -103,15 +103,15 @@ pip install -r requirements-dev.txt
 From the repo root:
 
 ```bash
-python setup_data.py --project bone-age
+python setup_data.py --project pediatric-radiology-ai
 ```
 
-This will download and unpack the RSNA Bone Age dataset into `bone-age/data/`.
+This will download and unpack the RSNA Bone Age dataset into `pediatric-radiology-ai/data/`.
 
 ### 2️⃣ Train the Model & Export Weights
 
 ```bash
-cd bone-age
+cd pediatric-radiology-ai
 python src/train.py
 ```
 
@@ -123,7 +123,7 @@ This will:
 ### 3️⃣ Run the Streamlit App
 
 ```bash
-cd bone-age
+cd pediatric-radiology-ai
 streamlit run app.py
 ```
 
@@ -136,7 +136,7 @@ Upload a hand X‑ray and get a bone age prediction.
 ### 🌐 Web Application
 
 ```bash
-cd bone-age
+cd pediatric-radiology-ai
 streamlit run app.py
 ```
 
@@ -186,7 +186,7 @@ model.fit(train_gen, validation_data=val_gen, epochs=10)
 ## 🗂 Project Structure
 
 ```text
-bone-age/
+pediatric-radiology-ai/
 ├── app.py                   # Streamlit app
 ├── config/
 │   └── config.yaml          # Training/config options

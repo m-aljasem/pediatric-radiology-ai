@@ -17,12 +17,12 @@ from src.model import build_xception_model
 from src.data_loader import BoneAgeDataLoader
 
 st.set_page_config(
-    page_title="Bone Age Prediction",
+    page_title="Pediatric Radiology AI",
     page_icon="🦴",
     layout="wide"
 )
 
-st.title("🦴 Bone Age Prediction from X-ray Images")
+st.title("Pediatric Radiology AI")
 st.markdown("Predict bone age using deep learning with Xception architecture")
 
 # Sidebar
